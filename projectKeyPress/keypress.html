@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            background-color: rgb(139, 148, 148);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>A function is triggered when the user is pressing a key in ghe input field.</p>
+        <br/>
+        <input type="text" class="effect_1" onkeypress="keyPress()", onkeydown="keyDown()" onkeyup="keyUp()"/>
+        <br/>
+        <p id='keyPress'></p>
+        <p id='keyDown'></p>
+        <p id='keyUp'></p>
+    </div>
+    <script>
+        const keyPress = () =>{
+            document.getElementById('keyPress').innerHTML = `You have pressed ${event.key} and it's code is ${event.code}`;
+        }
+
+        const keyDown = () =>{
+            document.getElementById('keyDown').innerHTML = `Key is Down`;
+        }
+
+        const keyUp = () =>{
+            document.getElementById('keyUp').innerHTML = `Key is Up`;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(58, 78, 109);
+            text-align: center;
+        }
+        div{
+            color: white;
+            font-weight: 900;
+            margin-top: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Click "Try it". Wait 3 seconds. The Page will alert 'Hello'.</p>
+        <p>Click "Stop" to prevent the first function to execute.</p>
+        <p>(You must click "Stop" before the 3 seconds).</p>
+        
+        <button onclick="tryIt = setTimeout(tryItFunction, 3000)">Try it</button>
+
+        <button onclick="clearTimeout(tryIt)">Stop it</button>
+    </div>
+
+    <script>
+        function tryItFunction(){
+            alert('Hello.')
+        }
+    </script>
+</body>
+</html>

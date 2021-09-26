@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(58, 78, 109);
+            text-align: center;
+        }
+        div{
+            color: white;
+            font-weight: 900;
+            margin-top: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Can you stop me when I reach at 5.</p>
+        <br/>
+        <button id="btn">Click here</button>
+    </div>
+
+    <script>
+        const stopNum = document.querySelector('p');
+        const btn = document.querySelector('#btn');
+
+        let num = 0;
+
+        const showMyNum = () =>{
+            stopNum.innerHTML = 'Loading...'
+            setInterval(() => {
+                stopNum.innerHTML = `${num}`;
+                num++;
+            }, 1000);
+        }
+
+        btn.addEventListener('click', showMyNum);
+    </script>
+</body>
+</html>
