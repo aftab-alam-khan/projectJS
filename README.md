@@ -15,5 +15,7 @@ then do like this
 
 # Sample Example
 
+To run AnimatedThermometer index.html file
+
 https://htmlpreview.github.io/?https://github.com/aftab-alam-khan/projectJS/blob/main/AnimatedThermometer/index.html
 
