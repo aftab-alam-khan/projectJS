@@ -9,9 +9,9 @@ infront of your github file location
 # example
 your HTML file location in github
 
-'https://github.com/<user-name>/<file-path-location>/<file-name>.html'
+'https://github.com/'user-name'/'file-path-location'/'file-name'.html'
 then do like this
-'https://htmlpreview.github.io/?https://github.com/<user-name>/<file-path-location>/<file-name>.html'
+'https://htmlpreview.github.io/?https://github.com/'user-name'/'file-path-location'/'file-name'.html'
 
 # Sample Example
 
